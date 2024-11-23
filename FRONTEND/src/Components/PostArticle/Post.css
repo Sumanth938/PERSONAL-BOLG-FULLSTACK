@@ -1,0 +1,23 @@
+.post-article-layout{
+    width: 70%;
+    margin: 50px auto;
+}
+
+.post-article-layout .form-post{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-post .input-layout{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.form-post .input-layout input , .form-post .input-layout textarea{
+    border: 1px solid var(--font-color) !important;
+    border-radius: 5px;
+}

@@ -1,0 +1,412 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f6d6a2;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --primary-color: #483ea8;
+  --font-color: #6b7280;
+  --bg-color: #020617;
+  --bg-color-2: #111827;
+  --normal-font: 16px;
+  --error: #a61919;
+  --blue: #1e90ff;
+  --light-white: #fcfcfc;
+  --white: #ffffff;
+  --black: #000;
+  --light-black: #464b56;
+  --label: #1c1c1c;
+  --border: #eaecf0;
+  --error: #cb0505;
+  --grey: #969696;
+  --green: #63c047;
+  --green-line: #369d2c;
+  --red: #d54343;
+  --yellow: #d5d043;
+  --dark-grey: #4e4d4d;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins" !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Poppins" !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  -moz-box-sizing: border-box;
+}
+
+body {
+  background-color: #ededed;
+  color: #424242;
+  margin: 0;
+  font-family: "Poppins" !important;
+  font-size: 14px;
+  line-height: 1.428571429;
+  font-style: normal !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Poppins" !important;
+  font-weight: normal;
+  line-height: 1.1;
+  color: #333;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small {
+  font-weight: normal;
+  line-height: 1;
+}
+h1,
+.h1 {
+  font-size: 45px;
+  line-height: 48px;
+}
+h2,
+.h2 {
+  font-size: 36px;
+  line-height: 42px;
+}
+h3,
+.h3 {
+  font-size: 28px;
+  line-height: 36px;
+}
+h4,
+.h4 {
+  font-size: 24px;
+  line-height: 25px;
+}
+h5,
+.h5 {
+  font-size: 20px;
+  line-height: 24px;
+}
+h6,
+.h6 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+a {
+  color: #3282e6;
+}
+a:hover,
+a:focus {
+  color: #165db5;
+  text-decoration: underline;
+}
+
+.features-box-one {
+  height: 465px;
+}
+
+/* Global scrollbar styles */
+
+/* For WebKit browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+  height: 5px; /* Height of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2f3b4b; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f5f8fb; /* Background color of the scrollbar track */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Make the scrollbar thin */
+  scrollbar-color: #2f3b4b #f5f8fb; /* Set the thumb and track colors */
+}
+
+/* For Edge */
+::-ms-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+::-ms-scrollbar-thumb {
+  background-color: #2f3b4b; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners */
+}
+
+::-ms-scrollbar-track {
+  background-color: #f5f8fb; /* Background color of the scrollbar track */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.pagination .page-link {
+  /* Make the buttons round */
+  background-color: white;
+  color: var(--primary-color);
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 133.333% */
+  border-radius: 0px;
+  /* border: none; */
+}
+
+.pagination .page-item.active .page-link {
+  border-radius: 8px;
+  background-color: var(--primary-color); /* Active page background color */
+  border-color: var(--primary-color); /* Active page border color */
+  color: white; /* Active page text color */
+}
+
+.pagination .page-item.disabled .page-link {
+  color: var(--grey);
+}
+
+.small-heading-font {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 64px;
+  color: var(--primary-color);
+}
+
+.but {
+  display: flex;
+  align-items: center;
+  padding: 8px 20px;
+  gap: 10px;
+  width: fit-content;
+  height: 43px;
+  background: var(--primary-color);
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: var(--light-white);
+  transition: 0.3s;
+}
+
+.small-but {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  gap: 10px;
+  width: fit-content;
+  min-height: 25px;
+  background: var(--primary-color);
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--light-white);
+  transition: 0.3s;
+}
+
+:root {
+  --font-color: #6b7280;
+  --bg-color: #020617;
+  --bg-color-2: #111827;
+  --normal-font: 16px;
+  --error: #a61919;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* Light theme */
+.light-theme {
+  --font-color: #374151;
+  --bg-color: #ffffff;
+  --bg-color-2: #f3f4f6;
+  --error: #dc2626;
+  --black: #ffffff;
+  --white: #000000;
+}
+
+/* Dark theme */
+.dark-theme {
+  --font-color: #d1d5db;
+  --bg-color: #020617;
+  --bg-color-2: #111827;
+  --error: #a61919;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+p {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--normal-font);
+  line-height: 27px;
+  color: var(--font-color);
+}
+
+Link,
+NavLink,
+a {
+  text-decoration: none !important;
+  color: var(--font-color);
+}
+
+.color-primary {
+  color: var(--primary-color) !important;
+}
+
+.color-white {
+  color: var(--white) !important;
+}
+
+.color-font {
+  color: var(--font-color) !important;
+}
+
+.heading-font {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 64px;
+  color: var(--white);
+}
+
+.small-heading-font {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 64px;
+  color: var(--white);
+}
+
+.but {
+  display: flex;
+  align-items: center;
+  padding: 8px 20px;
+  gap: 10px;
+  width: fit-content;
+  height: 43px;
+  background: var(--primary-color);
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: black;
+  transition: 0.3s;
+}
+
+.but:hover {
+  background-color: var(--font-color);
+  color: var(--white);
+}
+
+input,
+textarea {
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+}
+
+.error-message {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--normal-font);
+  line-height: 20px;
+  color: var(--error);
+  margin-top: 4px;
+  margin-left: 5px;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--bg-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+ul {
+  list-style-position: outside;
+  margin-left: -18px;
+}

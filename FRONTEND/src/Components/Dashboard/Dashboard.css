@@ -1,0 +1,68 @@
+.all-articles-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  padding: 50px;
+}
+
+.heading-title .title:before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -25px;
+  width: 50px;
+  height: 4px;
+  background: var(--primary-color);
+  display: inline-block;
+}
+.heading-title {
+  margin-bottom: 30px;
+}
+.heading-title .title {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.articles-section{
+    width: 70%;
+}
+
+.article-card {
+  float: left;
+  width: 100%;
+  display: table;
+  border: 1px solid #0367a614;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 2px #00000040;
+  border-radius: 10px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.article-card:hover {
+  .job-listing:hover {
+    -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: relative;
+  }
+}
+
+.article-card .article-title{
+    font-size: (--normal-font);
+    font-weight: 500;
+    text-align: left;
+    color: var(--font-color);
+}
+
+.article-card .article-sub-title{
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: left;
+}

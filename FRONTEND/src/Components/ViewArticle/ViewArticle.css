@@ -1,0 +1,29 @@
+.view-article-layout {
+    width: 90%;                /* Take up 90% of the available width */
+    max-width: 800px;          /* Limit the maximum width */
+    display: flex;
+    flex-direction: column;    /* Stack child elements vertically */
+    align-items: center;       /* Center items horizontally */
+    justify-content: center;   /* Center items vertically */
+    margin: 50px auto;         /* Center the container itself with margin auto */
+    padding: 20px;             /* Add padding for spacing inside */
+    height: auto;              /* Allow height to adjust based on content */
+    min-height: 70vh;          /* Set a minimum height relative to the viewport */
+  }
+  
+  /* Add media query for smaller screens */
+  @media (max-width: 600px) {
+    .view-article-layout {
+      width: 100%;             /* On smaller screens, take up full width */
+      padding: 15px;           /* Adjust padding for smaller screens */
+    }
+  }
+  
+  /* Add media query for medium-sized screens (tablets, etc.) */
+  @media (max-width: 768px) {
+    .view-article-layout {
+      width: 85%;             /* Adjust the width to 85% for medium screens */
+      padding: 20px;           /* Adjust padding for medium screens */
+    }
+  }
+  
